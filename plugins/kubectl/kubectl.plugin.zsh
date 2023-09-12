@@ -24,6 +24,9 @@ alias kaf='kubectl apply -f'
 # Drop into an interactive terminal on a container
 alias keti='kubectl exec -t -i'
 
+# Get events in chronological order
+alias kge='kubectl get events --sort-by=.metadata.creationTimestamp'
+
 # Manage configuration quickly to switch contexts between local, dev ad staging.
 alias kcuc='kubectl config use-context'
 alias kcsc='kubectl config set-context'
